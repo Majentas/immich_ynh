@@ -169,7 +169,6 @@ myynh_execute_psql_as_root() {
 	ynh_handle_getopts_args "$@"
 	options="${options:-}"
 	database="${database:-}"
-	database="--dbname=$database"
 	if [ -n "$database" ]
 	then
 		database="--dbname=$database"
